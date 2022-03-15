@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora de Resistores </title>
+    <style>
+        .fim{
+            display: none;
+        }
+        fieldset, .fim , footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend><h1> Calculadora de Resistores </h1></legend>
+                <label for="faixaUm"> 1ª Faixa </label>
+                <select name="pri" id="faixaUm">
+                    <option value="0"> Preto </option>
+                    <option value="1"> Marrom </option>
+                    <option value="2"> Vermelho </option>
+                    <option value="3"> Laranja </option>
+                    <option value="4"> Amarelo </option>
+                    <option value="5"> Verde </option>
+                    <option value="6"> Azul </option>
+                    <option value="7"> Violeta </option>
+                    <option value="8"> Cinza </option>
+                    <option value="9"> Branco </option>
+                </select>
+
+                <label for="faixaDois"> 2ª Faixa </label>
+                <select name="seg" id="faixaDois">
+                    <option value="0"> Preto </option>
+                    <option value="1"> Marrom </option>
+                    <option value="2"> Vermelho </option>
+                    <option value="3"> Laranja </option>
+                    <option value="4"> Amarelo </option>
+                    <option value="5"> Verde </option>
+                    <option value="6"> Azul </option>
+                    <option value="7"> Violeta </option>
+                    <option value="8"> Cinza </option>
+                    <option value="9"> Branco </option>
+                </select>
+
+                <label for="faixaTres"> 3ª Faixa </label>
+                <select name="ter" id="faixaTres">
+                    <option value="0"> Preto </option>
+                    <option value="1"> Marrom </option>
+                    <option value="2"> Vermelho </option>
+                    <option value="3"> Laranja </option>
+                    <option value="4"> Amarelo </option>
+                    <option value="5"> Verde </option>
+                    <option value="6"> Azul </option>
+                    <option value="7"> Violeta </option>
+                    <option value="8"> Cinza </option>
+                    <option value="9"> Branco </option>
+                </select>
+
+                <label for="Mult"> Multiplicador </label>
+                <select name="qui" id="Mult">
+                    <option value="1"> Preto </option>
+                    <option value="10"> Marrom </option>
+                    <option value="100"> Vermelho </option>
+                    <option value="1000"> Laranja </option>
+                    <option value="10000"> Amarelo </option>
+                    <option value="100000"> Verde </option>
+                    <option value="1000000"> Azul </option>
+                    <option value="10000000"> Violeta </option>
+                    <option value="0.1"> Dourado </option>
+                    <option value="0.01"> Prata </option>
+                </select>
+
+                <label for="Tol"> Tolerância </label>
+                <select name="sex" id="Tol">
+                    <option value="0.01"> Marrom </option>
+                    <option value="0.02"> Vermelho </option>
+                    <option value="0.005"> Verde </option>
+                    <option value="0.0025"> Azul </option>
+                    <option value="0.001"> Violeta </option>
+                    <option value="0.0005"> Cinza </option>
+                    <option value="0.5"> Dourado </option>
+                    <option value="0.1"> Prata </option>
+                </select>
+
+                <p><button type="button" onclick="pegarDados()"> Calcular </button></p>
+
+            </fieldset>
+            <fieldset class="fim">
+                <legend><h2> Resultado </h2></legend>
+                <div id="result"></div>
+            </fieldset>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <br>
+    
+</body>
+</html>
